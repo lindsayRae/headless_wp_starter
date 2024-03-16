@@ -1,9 +1,9 @@
 import React from 'react';
-export default function hello_world() {
+export default function about() {
   return (
     <div>
-      <div class='hello_sam'>
-        Hello Lindsay, I'm your first Next.js / Headless WP app 👋
+      <div class=''>
+        Hello Lindsay, I&apos;m your first Next.js - Headless WP app 👋
       </div>
     </div>
   );
