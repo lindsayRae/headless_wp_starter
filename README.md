@@ -38,3 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # need:
 
 npm i @heroicons/react
+
+# email tutorial
+
+https://medium.com/@abilsavio/email-contact-form-using-nextjs-app-router-60c29fe70644
