@@ -7,7 +7,7 @@ export async function sendEmail(data) {
   })
     .then((res) => res.json())
     .then((response) => {
-      //   alert(response.message);
+      alert(response.message);
       return response;
     })
     .catch((err) => {
