@@ -17,7 +17,7 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline';
-import ContactForm from '../components/ContactForm';
+
 import ContactForm2 from '../components/ContactForm2';
 
 export default function Contact() {
