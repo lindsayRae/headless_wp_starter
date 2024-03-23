@@ -18,10 +18,8 @@ export default function ContactForm() {
   });
 
   const processForm = async (data) => {
-    console.log('--- data', data);
-
     const result = await sendEmail(data);
-
+    console.log('--- result', data);
     if (result?.success) {
       console.log({ data: result.data });
       toast.success('Email sent!');

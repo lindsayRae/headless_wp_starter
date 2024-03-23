@@ -18,7 +18,7 @@ import {
   PhoneIcon,
 } from '@heroicons/react/24/outline';
 
-import ContactForm2 from '../components/ContactForm2';
+import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
   return (
@@ -127,8 +127,8 @@ export default function Contact() {
             </dl>
           </div>
         </div>
-        {/* <ContactForm /> */}
-        <ContactForm2 />
+
+        <ContactForm />
       </div>
     </div>
   );

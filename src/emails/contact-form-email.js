@@ -1,6 +1,6 @@
 const ContactFormEmail = ({ name, email, message }) => (
   <div>
-    <h1>Contact form submission</h1>
+    <h1>Lead from website</h1>
     <p>
       From <strong>{name}</strong> at {email}
     </p>

@@ -41,4 +41,7 @@ npm i @heroicons/react
 
 # email tutorial
 
-https://medium.com/@abilsavio/email-contact-form-using-nextjs-app-router-60c29fe70644
+## Send emails using React Email, Resend & Server actions
+
+https://www.youtube.com/watch?v=a8b3EN0R-M4
+https://github.com/HamedBahram/next-rhf/blob/email/app/_actions.ts
