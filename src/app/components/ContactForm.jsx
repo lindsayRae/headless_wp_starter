@@ -1,43 +1,60 @@
 'use client';
-import React, { useRef } from 'react';
-import { useForm } from 'react-hook-form';
+import React, { useRef, useState, FormEvent } from 'react';
+// import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/utils/send-email';
 import { sendBrevoEmail } from '@/services/sendBrevoEmail';
 
 function ContactForm() {
-  const formRef = useRef(null); // Create a ref for the form element
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
-    defaultValues: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      message: '',
-    },
-  });
-  async function onSubmit(data) {
-    console.log('submit data - ', data);
-    try {
-      const result = await sendEmail(data);
-      // currently comes back undefined and reset does not work
-      console.log('result - ', result);
-      if (result) {
-        formRef.current.reset(); // Reset the form if the submission is successful
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
-  }
+  //const formRef = useRef(null); // Create a ref for the form element
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm({
+  //   defaultValues: {
+  //     firstName: '',
+  //     lastName: '',
+  //     email: '',
+  //     message: '',
+  //   },
+  // });
+  const [data, setData] = useState();
+  // async function onSubmit(data) {
+  //   console.log('submit data - ', data);
+  //   // try {
+  //   //   const result = await sendEmail(data);
+  //   //   // currently comes back undefined and reset does not work
+  //   //   console.log('result - ', result);
+  //   //   if (result) {
+  //   //     formRef.current.reset(); // Reset the form if the submission is successful
+  //   //   }
+  //   // } catch (error) {
+  //   //   console.error('Error submitting form:', error);
+  //   // }
+  // }
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const formDataObject = Object.fromEntries(formData);
+    console.log(formDataObject);
+    // validate data here...
+
+    const data = await fetch('/api/form', {
+      method: 'POST',
+      body: JSON.stringify(formDataObject),
+    }).then((res) => res.json());
+
+    setData(data);
+    form.reset();
+  };
   async function handleOnClickBrevo() {
     sendBrevoEmail();
   }
   return (
     <div>
-      <form
+      {/* <form
         onSubmit={handleSubmit(onSubmit)}
         className='px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48'
       >
@@ -94,24 +111,7 @@ function ContactForm() {
                 <p>{errors.email?.message}</p>
               </div>
             </div>
-            {/* <div className='sm:col-span-2'>
-              <label
-                htmlFor='phone-number'
-                className='block text-sm font-semibold leading-6 text-white'
-              >
-                Phone number
-              </label>
-              <div className='mt-2.5'>
-                <input
-                  type='tel'
-                  name='phone-number'
-                  id='phone-number'
-                  autoComplete='tel'
-                  className='block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
-                  {...register('phone', { required: true })}
-                />
-              </div>
-            </div> */}
+           
             <div className='sm:col-span-2'>
               <label
                 htmlFor='message'
@@ -140,8 +140,34 @@ function ContactForm() {
             </button>
           </div>
         </div>
-      </form>
+      </form> */}
+      <section className='gap-6'>
+        <form
+          onSubmit={handleSubmit}
+          className='flex flex-1 flex-col gap-4 sm:w-1/2 px-6 pt-36 pb-6 lg:px-8 '
+        >
+          <h2 className='mb-4'>Testing Hamed video</h2>
+          <input
+            className='rounded-lg'
+            name='name'
+            placeholder='name'
+            required
+          />
+          <input
+            className='rounded-lg'
+            name='message'
+            placeholder='message'
+            required
+          />
+          <button className='rounded-lg bg-black py-2 text-white'>
+            Submit
+          </button>
+        </form>
 
+        <div className='rounded-lg bg-cyan-600 p-8 text-white mx-6'>
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        </div>
+      </section>
       <div className='ml-4 mt-6'>
         <h2 className='mb-4'>Testing Brevo API</h2>
 
