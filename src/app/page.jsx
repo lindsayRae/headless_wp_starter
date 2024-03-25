@@ -5,6 +5,7 @@ import FeatureSection from './components/FeatureSection';
 import FeatureSection2 from './components/FeatureSection2';
 import Stats from './components/Stats';
 import CTA from './components/CTA';
+import InstaFeed from './components/InstaFeed';
 
 export default function Home() {
   return (
@@ -108,19 +109,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* Logo cloud */}
       <PartnerBanner />
-
+      {/* Instagram Feed */}
+      <InstaFeed />
       {/* Feature section */}
       <FeatureSection />
-
       {/* Feature section */}
       <FeatureSection2 />
-
       {/* Stats */}
       <Stats />
-
       {/* CTA section */}
       <CTA />
     </div>
