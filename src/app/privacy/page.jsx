@@ -15,11 +15,11 @@ export default function PrivacyPolicy() {
           </h2>
           <p className='mt-6'>
             In common with other websites, log files are stored on the web
-            server saving details such as the visitor's IP address, browser
+            server saving details such as the visitor&apos;s IP address, browser
             type, referring page and time of visit. Cookies may be used to
             remember visitor preferences when interacting with the website.
-            Where registration is required, the visitor's email and a username
-            will be stored on the server.
+            Where registration is required, the visitor&apos;s email and a
+            username will be stored on the server.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
             How the Information is used
           </h2>
           <p className='mt-6'>
-            The information is used to enhance the vistor's experience when
+            The information is used to enhance the vistor&apos;s experience when
             using the website to display personalised content and possibly
             advertising. E-mail addresses will not be sold, rented or leased to
             3rd parties. E-mail may be sent to inform you of news of our
@@ -53,11 +53,11 @@ export default function PrivacyPolicy() {
             Google Ads
           </h2>
           <p className='mt-6'>
-            Google, as a third party vendor, uses cookies to serve ads. Google's
-            use of the DART cookie enables it to serve ads to visitors based on
-            their visit to sites they visit on the Internet. Website visitors
-            may opt out of the use of the DART cookie by visiting the Google ad
-            and content network privacy policy.
+            Google, as a third party vendor, uses cookies to serve ads.
+            Google&apos;s use of the DART cookie enables it to serve ads to
+            visitors based on their visit to sites they visit on the Internet.
+            Website visitors may opt out of the use of the DART cookie by
+            visiting the Google ad and content network privacy policy.
           </p>
         </div>
       </div>
