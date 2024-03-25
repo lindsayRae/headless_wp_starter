@@ -61,6 +61,86 @@ export default function PrivacyPolicy() {
           </p>
         </div>
       </div>
+      <div className='mx-auto max-w-3xl text-base leading-7 text-gray-700 mt-3'>
+        <p className='text-base font-semibold leading-7 text-indigo-600'>
+          Last updated: March 2023
+        </p>
+        <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+          Data Deletion Policy
+        </h1>
+
+        <div className='mt-10 max-w-2xl'>
+          <h2 className='mt-16 text-2xl font-bold tracking-tight text-gray-900'>
+            Information that is gathered from visitors
+          </h2>
+          <p className='mt-6'>
+            Purpose: This policy outlines the procedures for the secure and
+            timely deletion of data to ensure compliance with privacy
+            regulations and mitigate risks associated with data retention.
+            Scope: This policy applies to all employees, contractors, and
+            third-party vendors who handle sensitive or personal data within the
+            organization.
+          </p>
+        </div>
+
+        <div className='mt-16 max-w-2xl'>
+          <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
+            Policy:
+          </h2>
+          <p className='mt-6'>
+            Data Identification: Regularly identify and classify data based on
+            its sensitivity and relevance to business operations. Retention
+            Periods: Establish clear retention periods for different types of
+            data in accordance with legal requirements and business needs. Data
+            Deletion Procedures: Upon reaching the end of its retention period
+            or upon request for deletion, data must be securely erased from all
+            systems and storage devices. Data deletion procedures must include
+            physical and digital media, such as hard drives, databases, servers,
+            and cloud storage. Secure Deletion Methods: Use industry-standard
+            methods for data deletion, such as encryption, overwriting, or
+            physical destruction, to prevent unauthorized recovery. Ensure that
+            deleted data cannot be reconstructed or retrieved by unauthorized
+            parties. Documentation and Tracking: Maintain records of data
+            deletion activities, including the date, reason, and method of
+            deletion. Document any exceptions or deviations from the standard
+            deletion procedures. Employee Training: Provide regular training to
+            employees on the importance of data deletion and the proper
+            procedures to follow. Ensure employees understand their
+            responsibilities regarding data deletion and the potential
+            consequences of non-compliance. Third-Party Compliance: Require
+            third-party vendors and service providers to adhere to the
+            organization's data deletion policies and procedures. Include
+            contractual obligations regarding data deletion and secure disposal
+            in vendor agreements. Monitoring and Auditing: Regularly monitor
+            data deletion activities to ensure compliance with policies and
+            regulations. Conduct periodic audits to verify the effectiveness of
+            data deletion procedures and identify areas for improvement.
+          </p>
+        </div>
+
+        <div className='mt-16 max-w-2xl'>
+          <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
+            Enforcement:
+          </h2>
+          <p className='mt-6'>
+            Violation of this policy may result in disciplinary action, up to
+            and including termination of employment or contract termination.
+            Compliance with this policy is mandatory for all employees and third
+            parties handling sensitive data.
+          </p>
+        </div>
+        <div className='mt-16 max-w-2xl'>
+          <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
+            Review and Revision:
+          </h2>
+          <p className='mt-6'>
+            This policy will be reviewed annually and updated as necessary to
+            reflect changes in technology, regulations, or business practices.
+            Any revisions to the policy will be communicated to all relevant
+            stakeholders.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
