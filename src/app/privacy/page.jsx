@@ -109,7 +109,7 @@ export default function PrivacyPolicy() {
             responsibilities regarding data deletion and the potential
             consequences of non-compliance. Third-Party Compliance: Require
             third-party vendors and service providers to adhere to the
-            organization's data deletion policies and procedures. Include
+            organization&apos;s data deletion policies and procedures. Include
             contractual obligations regarding data deletion and secure disposal
             in vendor agreements. Monitoring and Auditing: Regularly monitor
             data deletion activities to ensure compliance with policies and
