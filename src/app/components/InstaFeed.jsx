@@ -6,7 +6,7 @@ export default async function InstaFeed() {
   let error = null;
 
   try {
-    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,permalink&access_token=${process.env.ACCESS_TOKEN}`;
+    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,permalink&access_token=${process.env.IG_ACCESS_TOKEN}`;
 
     const fakeDataURL =
       'http://jsonplaceholder.typicode.com/photos?_start=0&_limit=6';
