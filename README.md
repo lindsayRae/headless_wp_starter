@@ -45,3 +45,24 @@ npm i @heroicons/react
 
 https://www.youtube.com/watch?v=a8b3EN0R-M4
 https://github.com/HamedBahram/next-rhf/blob/email/app/_actions.ts
+
+## yup validation
+
+https://medium.com/@paulallles/validation-with-yup-bb12565c1f9d#:~:text=With%20Yup%2C%20you%20can%20easily,to%20match%20your%20specific%20requirements.
+
+# Instagram Feed
+
+### Offical Docs
+
+https://developers.facebook.com/
+https://developers.facebook.com/docs/instagram-basic-display-api/getting-started
+
+Initially you are given a short lived access token which expires in 1 hour. You can trade in for a long lived token that is good for 60 days.
+
+https://developers.facebook.com/docs/instagram-basic-display-api/guides/
+long-lived-access-tokens#get-a-long-lived-token
+
+### Medium article with repo
+
+https://medium.com/the-balancing-act/how-to-add-instagram-photos-to-your-nextjs-site-using-the-official-api-74eb4ca034a0
+https://github.com/jrparente/nextjs-instagram
